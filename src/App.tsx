@@ -40,11 +40,13 @@ function App() {
 
   return (
     <div className="min-h-screen bg-brand-black text-gray-300 p-4 sm:p-6 lg:px-4 lg:py-12 flex flex-col lg:flex-row gap-6 lg:gap-8 justify-center items-start max-w-[1600px] mx-auto">
+    <div className="min-h-screen bg-brand-black text-gray-300 p-0 flex flex-col lg:flex-row gap-4 lg:gap-6 justify-center items-start max-w-[1600px] mx-auto lg:py-10">
       <Sidebar />
       
       <main 
         ref={contentRef}
         className="relative flex-1 w-full p-6 mb-20 overflow-hidden border bg-brand-card border-brand-border rounded-3xl sm:p-8 lg:p-12 lg:mb-0"
+        className="relative flex-1 w-full p-5 mb-20 overflow-hidden border bg-brand-card border-brand-border rounded-3xl sm:p-6 lg:p-10 lg:mb-0"
       >
         {/* Responsive Navigation */}
         <nav className="
