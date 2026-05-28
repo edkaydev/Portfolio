@@ -86,17 +86,16 @@ export const resumeData = {
       title: "HP LIFE: Introduction to Cybersecurity Awareness",
       issuer: "HP Foundation",
       desc: "Successfully completed online course on common cybersecurity threats and basic ways to keep online data and information more secure. Presented 9/4/2024.",
-      link: "/hp-life.pdf"
+      link: "/hp.pdf"
     }
   ],
   skills: [
-    { name: "HTML5 & CSS3", level: 90 },
-    { name: "JavaScript (ES6+) & TypeScript", level: 85 },
-    { name: "React.js", level: 85 },
-    { name: "Responsive Web Design", level: 90 },
-    { name: "REST API Integration", level: 80 },
-    { name: "Git & Version Control", level: 85 },
-    { name: "Debugging & Problem Solving", level: 80 }
+    { name: "React & Next.js", level: 85 },
+    { name: "JavaScript / TypeScript", level: 85 },
+    { name: "Tailwind CSS", level: 90 },
+    { name: "Firebase (Auth/DB)", level: 65 },
+    { name: "AI Integration", level: 80 },
+    { name: "WordPress Customization", level: 75 }
   ]
 };
 
@@ -104,32 +103,82 @@ export const portfolioData = [
   {
     id: 1,
     title: "Manira Store",
-    category: "Web Application",
+    category: "StartUp",
     image: "/manira.png",
-    description: "Multi-seller e-commerce platform with responsive UI, mobile-first design, and REST API integration.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "REST API"],
+    description: "An e-commerce platform for local artisans, offering a seamless shopping experience with fast delivery and secure payments.",
+    tech: ["Firebase", "TypeScript", "Next.js"],
     link: "https://manira.store",
     gitLink: ""
   },
   {
     id: 2,
-    title: "Nkozi Mart Online",
+    title: "Essimu Uganda | Smart Shop",
     category: "Landing Page",
+    image: "/essimu.png",
+    description: "A high-performance digital storefront built for seamless WhatsApp conversions, turning clicks into sales.",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
+    link: "https://essimu-ug.vercel.app/",
+    gitLink: "https://github.com/edwardkay1/essimu-ug"
+  },
+  {
+    id: 3,
+    title: "University Attendance Portal",
+    category: "Application",
+    image: "/student.png",
+    description: "Digitizing classroom attendance with speed and precision, streamlining the academic workflow for students and reps.",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
+    link: "",
+    gitLink: "https://github.com/edwardkay1/University-Attendance-App"
+  },
+  {
+    id: 4,
+    title: "Essimu Management Portal",
+    category: "Web Application",
+    image: "/essimuPortal.png",
+    description: "A management hub for Uganda seller words with multi-seller cart support and a 2-month trial period for new users.",
+    tech: ["React", "Firebase", "Cloudinary", "Tailwind"],
+    link: "https://essimu-ug.vercel.app/",
+    gitLink: "https://github.com/edwardkay1/essimu-ug"
+  },
+  {
+    id: 5,
+    title: "Shami Global Shop",
+    category: "Web Application",
+    image: "/shami.png",
+    description: "A premium e-commerce experience that converts product catalogs into direct customer conversations.",
+    tech: ["React", "Tailwind CSS", "Firebase"],
+    link: "https://shamiglobal-shop.vercel.app/",
+    gitLink: "https://github.com/edwardkay1/Shami-Global-shop"
+  },
+  {
+    id: 6,
+    title: "Nkozi Mart Online",
+    category: "Web Application",
     image: "/nkozi.png",
-    description: "Local marketplace online with fast, responsive design, real-time inventory updates, and API integration.",
-    tech: ["React", "Tailwind CSS", "Firebase", "REST API"],
+    description: "Bringing the local market online with a fast, mobile-first marketplace designed for seamless shopping.",
+    tech: ["React", "Tailwind CSS", "Firebase"],
     link: "https://nkozi-mart.vercel.app/",
     gitLink: "https://github.com/edwardkay1/Nkozi-Mart"
   },
   {
-    id: 3,
-    title: "Shami Global Shop",
-    category: "StartUp",
-    image: "/shami.png",
-    description: "E-commerce platform emphasizing accessibility (WCAG), responsive design, and smooth front-end interactions.",
-    tech: ["React", "Tailwind CSS", "Firebase"],
-    link: "https://shamiglobal-shop.vercel.app/",
-    gitLink: "https://github.com/edwardkay1/Shami-Global-shop"
+    id: 7,
+    title: "Owoja Engineering",
+    category: "WordPress",
+    image: "/owoja.png",
+    description: "Showcasing engineering excellence online with a professional digital presence optimized for visual impact.",
+    tech: ["PHP", "SCSS", "WordPress"],
+    link: "https://owojaengineering.com/",
+    gitLink: ""
+  },
+  {
+    id: 8,
+    title: "Kamu Eco Resort",
+    category: "WordPress",
+    image: "/kamu.png",
+    description: "Luxury resort website with immersive visuals and smooth booking experience for guests.",
+    tech: ["WordPress", "Elementor", "SEO"],
+    link: "https://kamuecoresort.com/",
+    gitLink: ""
   }
 ];
 export type Testimonial = {

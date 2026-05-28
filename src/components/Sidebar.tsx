@@ -9,7 +9,7 @@ export const Sidebar = () => (
       <img 
         src={personalInfo.avatar} 
         alt={personalInfo.name} 
-        className="object-cover w-32 h-32 transition-all duration-500 grayscale hover:grayscale-0" 
+        className="object-cover w-32 h-32 transition-all duration-500" 
       />
     </div>
 
@@ -63,7 +63,7 @@ export const Sidebar = () => (
  */
 const ContactItem = ({ icon, label, value, href }: { icon: React.ReactNode; label: string; value: string; href?: string }) => (
   <li className="flex items-center gap-4 group">
-    <div className="p-3 bg-brand-card rounded-xl text-brand-accent shadow-md border border-brand-border group-hover:bg-brand-accent group-hover:text-white transition-all duration-300">
+    <div className="p-3 transition-all duration-300 border shadow-md bg-brand-card rounded-xl text-brand-accent border-brand-border group-hover:bg-brand-accent group-hover:text-white">
       {icon}
     </div>
     <div className="overflow-hidden">
@@ -71,7 +71,7 @@ const ContactItem = ({ icon, label, value, href }: { icon: React.ReactNode; labe
       {href ? (
         <a 
           href={href} 
-          className="text-xs text-gray-200 truncate block hover:text-brand-accent transition-colors"
+          className="block text-xs text-gray-200 truncate transition-colors hover:text-brand-accent"
         >
           {value}
         </a>
