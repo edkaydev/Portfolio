@@ -1,3 +1,4 @@
+import React from 'react';
 import { resumeData } from '../data/data';
 import { BookOpen, Briefcase } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -11,7 +12,7 @@ type TimelineItem = {
 
 type TimelineProps = {
   title: string;
-  icon: JSX.Element;
+  icon: React.ReactNode;
   items: TimelineItem[];
 };
 
