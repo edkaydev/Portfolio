@@ -12,10 +12,10 @@ interface Message {
 }
 
 // Priority order for API endpoint: 
-// 1. NEXT_CHATAPI (Next.js/Vercel)
-// 2. CHATAPI (Legacy)
+// 1. VITE_NEXT_CHATAPI (Vite/Vercel)
+// 2. VITE_CHATAPI (Legacy)
 // 3. Droplet fallback
-const BOT_API_ENDPOINT = process.env.NEXT_CHATAPI || process.env.CHATAPI || 'http://192.81.209.164:5000/api/chat';
+const BOT_API_ENDPOINT = import.meta.env.NEXT_CHATAPI || import.meta.env.NEXT_CHATAPI || 'http://192.81.209.164:5000/api/chat';
 
 export const Contact = () => {
   const [messages, setMessages] = useState<Message[]>([]);
