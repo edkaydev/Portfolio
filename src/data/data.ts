@@ -8,9 +8,10 @@ export const personalInfo = {
   birthday: "March 4, 2004",
   location: "Uganda",
   socials: {
-    github: "https://github.com/edwardkay1",
-    twitter: "https://x.com/edwardkay1_",
-    linkedin: "https://www.linkedin.com/in/edwardkay1/",
+    github: "https://github.com/edkaydev",
+    twitter: "https://x.com/edkaydev",
+    linkedin: "https://www.linkedin.com/in/edkaydev/",
+    instagram: "https://www.instagram.com/edkaydev/",
   },
   whatsapp: "256791598412",
 };

@@ -1,11 +1,13 @@
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence,type Variants } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 import { Sidebar } from './components/Sidebar';
 import { About } from './components/About';
 import { Resume } from './components/Resume';
 import { Contact } from './components/Contact';
 import { PortfolioGrid } from './components/Portfolio';
 import { Certificates } from './components/Certificates';
+import { personalInfo } from './data/data';
 
 function App() {
   const [activeTab, setActiveTab] = useState('About');
@@ -40,6 +42,11 @@ function App() {
 
   return (
     <div className="min-h-screen text-gray-300 bg-brand-black">
+      <Helmet>
+        <title>{`${activeTab} | ${personalInfo.brandName} - ${personalInfo.role}`}</title>
+        <meta name="description" content={aboutData.description[0]} />
+      </Helmet>
+
       {/* Top-level viewport container with max-width and symmetrical padding */}
       <div className="w-full px-4 py-6 mx-auto max-w-7xl md:px-8 lg:px-12 lg:py-12">
         {/* Two-column grid separation for Sidebar and Main Panel */}
