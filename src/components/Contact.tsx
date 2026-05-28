@@ -47,7 +47,7 @@ ${formData.message}
 *Sent via Portfolio*
     `.trim();
 
-    const whatsappUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 
     setStatus('success');
@@ -63,19 +63,19 @@ ${formData.message}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed top-10 left-1/2 transform -translate-x-1/2 z-[200] bg-[#2b2b2c] border border-[#ffdb70] px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3"
+            className="fixed top-10 left-1/2 transform -translate-x-1/2 z-[200] bg-brand-card border border-brand-accent px-6 py-3 rounded-2xl shadow-2xl flex items-center gap-3"
           >
-            <CheckCircle2 className="text-[#ffdb70]" size={20} />
+            <CheckCircle2 className="text-brand-accent" size={20} />
             <span className="text-sm font-medium text-white">
-              Redirecting to WhatsApp...
+              Opening Secure WhatsApp Chat...
             </span>
           </motion.div>
         )}
       </AnimatePresence>
 
       {/* Heading */}
-      <h3 className="mb-8 text-3xl font-bold text-white sm:text-4xl">
-        Let's Build Something Amazing
+      <h3 className="mb-8 text-3xl font-bold tracking-tighter text-white sm:text-4xl">
+        Start a Conversation
       </h3>
 
       <form onSubmit={handleWhatsAppSend} className="space-y-8">
@@ -90,10 +90,10 @@ ${formData.message}
                 key={service}
                 type="button"
                 onClick={() => setFormData({ ...formData, service })}
-                className={`px-5 py-2.5 rounded-xl border text-sm font-medium transition-colors ${
+                className={`px-5 py-2.5 rounded-xl border text-sm font-bold transition-all ${
                   formData.service === service
-                    ? 'border-[#ffdb70] text-[#ffdb70] bg-[#ffdb70]/10'
-                    : 'border-[#383838] text-gray-400 hover:border-gray-500 hover:text-white'
+                    ? 'border-brand-accent text-brand-accent bg-brand-accent/10 shadow-[0_0_15px_rgba(10,132,255,0.2)]'
+                    : 'border-brand-border text-brand-muted hover:border-gray-500 hover:text-white'
                 }`}
               >
                 {service}
@@ -112,7 +112,7 @@ ${formData.message}
               required
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full bg-transparent border border-[#383838] rounded-2xl p-4 text-white focus:border-[#ffdb70] outline-none transition-colors focus:bg-[#212123]"
+              className="w-full p-4 text-white transition-all border outline-none bg-brand-card/50 border-brand-border rounded-2xl focus:border-brand-accent focus:ring-1 focus:ring-brand-accent"
             />
           </div>
 

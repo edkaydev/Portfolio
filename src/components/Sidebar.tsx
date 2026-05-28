@@ -2,21 +2,21 @@ import { Mail, Phone, Calendar, MapPin, Github, Twitter, Linkedin } from 'lucide
 import { personalInfo } from '../data/data';
 
 export const Sidebar = () => (
-  <aside className="w-full lg:w-72 bg-[#1e1e1f] border border-[#383838] rounded-3xl p-8 flex flex-col items-center sticky top-10">
+  <aside className="w-full lg:w-72 bg-brand-black border border-brand-border rounded-3xl p-8 flex flex-col items-center lg:sticky lg:top-10 shadow-2xl">
     {/* Profile Image */}
-    <div className="bg-[#2b2b2c] rounded-3xl mb-5 shadow-xl overflow-hidden">
+    <div className="bg-brand-card rounded-3xl mb-5 shadow-inner overflow-hidden border border-brand-border">
       <img 
         src={personalInfo.avatar} 
         alt={personalInfo.name} 
-        className="object-cover w-32 h-32" 
+        className="object-cover w-32 h-32 grayscale hover:grayscale-0 transition-all duration-500" 
       />
     </div>
 
     {/* Identity */}
-    <h1 className="mb-2 text-2xl font-bold text-center text-white">{personalInfo.name}</h1>
-    <p className="bg-[#383838] text-[10px] text-white px-4 py-1.5 rounded-lg mb-6">{personalInfo.role}</p>
+    <h1 className="mb-2 text-xl font-bold text-center text-white tracking-tight">{personalInfo.brandName}</h1>
+    <p className="bg-brand-card border border-brand-border text-[10px] text-brand-muted px-4 py-1.5 rounded-lg mb-6 font-medium uppercase tracking-widest">{personalInfo.role}</p>
     
-    <div className="w-full border-t border-[#383838] my-6"></div>
+    <div className="w-full border-t border-brand-border my-6"></div>
 
     {/* Contact List */}
     <ul className="w-full space-y-6">
@@ -86,12 +86,13 @@ const ContactItem = ({ icon, label, value, href }: { icon: JSX.Element; label: s
  * @param href - Link URL
  * @param icon - Icon JSX element
  */
-const SocialLink = ({ href, icon }: { href: string; icon: JSX.Element }) => (
+const SocialLink = ({ href, icon, label }: { href: string; icon: React.ReactNode; label: string }) => (
   <a 
     href={href} 
     target="_blank" 
     rel="noopener noreferrer" 
-    className="hover:text-[#ffdb70] transition-colors p-1"
+    aria-label={label}
+    className="hover:text-brand-accent transition-colors p-1"
   >
     {icon}
   </a>

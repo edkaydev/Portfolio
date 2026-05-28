@@ -6,6 +6,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        brand: {
+          black: '#050816',
+          card: '#0F172A',
+          accent: '#0A84FF',
+          muted: '#94A3B8',
+          border: '#1E293B',
+        }
+      },
       animation: {
         marquee: 'marquee 25s linear infinite',
       },

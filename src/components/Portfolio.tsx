@@ -33,7 +33,7 @@ export const PortfolioGrid = () => {
             key={cat}
             onClick={() => setFilter(cat)}
             className={`transition-colors duration-300 ${
-              filter === cat ? 'text-[#ffdb70]' : 'text-gray-400 hover:text-gray-200'
+              filter === cat ? 'text-brand-accent border-b border-brand-accent' : 'text-brand-muted hover:text-gray-200'
             }`}
           >
             {cat}
@@ -42,7 +42,7 @@ export const PortfolioGrid = () => {
       </nav>
 
       {/* Project Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project) => (
             <motion.div
@@ -52,26 +52,26 @@ export const PortfolioGrid = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
-              className="cursor-pointer group"
+              className={`cursor-pointer group ${project.title === 'Manira Store' ? 'md:col-span-2' : ''}`}
               onClick={() => setSelectedProject(project)}
             >
-              <div className="relative overflow-hidden rounded-2xl mb-4 bg-[#2b2b2c] border border-[#383838]">
+              <div className="relative overflow-hidden rounded-3xl mb-4 bg-brand-card border border-brand-border group-hover:border-brand-accent/50 transition-all">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-110"
+                  className={`w-full ${project.title === 'Manira Store' ? 'aspect-video' : 'aspect-[4/3]'} object-cover transition-transform duration-700 group-hover:scale-105`}
                 />
                 <div className="absolute inset-0 bg-[#00000066] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="p-4 bg-[#2b2b2c] rounded-xl text-[#ffdb70] shadow-2xl border border-[#383838]">
+                  <div className="p-4 bg-brand-card rounded-xl text-brand-accent shadow-2xl border border-brand-border">
                     <Eye size={24} />
                   </div>
                 </div>
               </div>
 
-              <h3 className="mb-1 text-sm font-bold text-white group-hover:text-[#ffdb70] transition-colors">
+              <h3 className="mb-1 text-lg font-bold text-white group-hover:text-brand-accent transition-colors">
                 {project.title}
               </h3>
-              <p className="text-xs text-gray-500">{project.category}</p>
+              <p className="text-xs text-brand-muted uppercase tracking-widest font-semibold">{project.category}</p>
             </motion.div>
           ))}
         </AnimatePresence>

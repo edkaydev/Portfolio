@@ -1,9 +1,10 @@
 export const personalInfo = {
-  name: "Kayiira Edward",
-  role: "Front-End Developer",
+  name: "Edward Kayiira",
+  brandName: "edkay.dev",
+  role: "Software Engineer & Frontend Developer",
   avatar: "/edward.png",
   email: "edwardbrin1@gmail.com",
-  phone: "+256 746 838 046",
+  phone: "+256 791 598 412",
   birthday: "March 4, 2004",
   location: "Uganda",
   socials: {
@@ -11,13 +12,13 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/edwardkay1/",
     twitter: "https://x.com/edwardkay1_"
   },
-  whatsapp: "256746838046",
+  whatsapp: "256791598412",
 };
 
 export const aboutData = {
   description: [
-    "I am a Front-End Developer passionate about building responsive, user-friendly web applications using React, TypeScript, HTML, and CSS.",
-    "I thrive in remote Agile teams, collaborating with designers and back-end developers to deliver clean, maintainable, and high-performance code."
+    "Software Engineer specializing in building scalable web applications, digital commerce systems, and modern user experiences.",
+    "Focused on delivering high-performance, accessible solutions with a minimalist and intentional design philosophy."
   ],
   services: [
     {
@@ -53,6 +54,13 @@ export const resumeData = {
       title: "Front-End Apprentice | Primacy Technologies",
       date: "09/2025 — 12/2025",
       desc: "Worked in an Agile team implementing front-end features, following coding standards, and debugging using Chrome DevTools."
+    }
+  ],
+  certifications: [
+    {
+      title: "ICDL Profile Certificate",
+      issuer: "International Computer Driving Licence",
+      desc: "Verified international standard in digital skills and professional computer use."
     }
   ],
   skills: [
