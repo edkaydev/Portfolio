@@ -11,6 +11,12 @@ interface Message {
   timestamp: Date;
 }
 
+// Priority order for API endpoint: 
+// 1. NEXT_CHATAPI (Next.js/Vercel)
+// 2. CHATAPI (Legacy)
+// 3. Droplet fallback
+const BOT_API_ENDPOINT = process.env.NEXT_CHATAPI || process.env.CHATAPI || 'http://192.81.209.164:5000/api/chat';
+
 export const Contact = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputMessage, setInputMessage] = useState('');
@@ -60,7 +66,7 @@ export const Contact = () => {
     setIsBotTyping(true);
 
     try {
-      const response = await fetch('http://192.81.209.164:5000/api/chat', {
+      const response = await fetch(BOT_API_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: userText, userId })
@@ -76,11 +82,11 @@ export const Contact = () => {
         text: data.reply || "Something went wrong processing that payload. Text 'menu' to reset.",
         timestamp: new Date()
       }]);
-    } catch (error) {
+    } catch (err) {
       setMessages(prev => [...prev, {
         id: crypto.randomUUID(),
         sender: 'bot',
-        text: "❌ Service Node Offline. The cloud container gateway is experiencing network congestion or standard timeout filters. Please text 'menu' to reset state lines.",
+        text: "⚠️ [System] Connection to WhatsApp Bot Node timed out. Please ensure the server is active or try again later.",
         timestamp: new Date()
       }]);
     } finally {
