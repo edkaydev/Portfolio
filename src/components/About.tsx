@@ -37,10 +37,10 @@ export const About = () => (
       {aboutData.services.map((s: Service, i: number) => (
         <div 
           key={i} 
-          className="relative flex gap-5 p-6 bg-gradient-to-br from-[#212123] to-[#1e1e1f] border border-[#383838] rounded-[24px] shadow-sm group hover:border-[#454545] transition-all"
+          className="relative flex gap-5 p-6 bg-brand-card border border-brand-border rounded-[24px] shadow-sm group hover:border-brand-accent transition-all"
         >
           <div className="flex-shrink-0">
-            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#2b2b2c] text-[#ffdb70] shadow-inner border border-[#383838] group-hover:scale-110 transition-transform">
+            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-brand-black text-brand-accent shadow-inner border border-brand-border group-hover:scale-110 transition-transform">
               <IconMap title={s.title} />
             </div>
           </div>
@@ -58,16 +58,16 @@ export const About = () => (
       {aboutData.testimonials.map((t: Testimonial, i: number) => (
         <div 
           key={i} 
-          className="min-w-[320px] md:min-w-[400px] bg-[#212123] border border-[#383838] p-8 rounded-[24px] relative mt-10 snap-center"
+          className="min-w-[320px] md:min-w-[400px] bg-brand-card border border-brand-border p-8 rounded-[24px] relative mt-10 snap-center"
         >
-          <div className="absolute p-1 -top-10 left-8 rounded-2xl bg-[#383838] shadow-2xl">
-            <div className="bg-[#2b2b2c] rounded-xl overflow-hidden w-10 h-10 flex items-center justify-center border border-[#454545]">
-              <User2Icon className="w-8 h-8 text-[#ffdb70]" />
+          <div className="absolute p-1 -top-10 left-8 rounded-2xl bg-brand-border shadow-2xl">
+            <div className="bg-brand-black rounded-xl overflow-hidden w-10 h-10 flex items-center justify-center border border-brand-border">
+              <User2Icon className="w-8 h-8 text-brand-accent" />
             </div>
           </div>
 
           <h4 className="mt-8 text-lg font-bold text-white">{t.name}</h4>
-          <p className="text-[#ffdb70] text-[10px] mb-4 uppercase font-bold tracking-widest">{t.role}</p>
+          <p className="text-brand-accent text-[10px] mb-4 uppercase font-bold tracking-widest">{t.role}</p>
           <p className="text-xs italic leading-relaxed text-gray-400">"{t.text}"</p>
         </div>
       ))}

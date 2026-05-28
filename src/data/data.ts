@@ -60,7 +60,20 @@ export const resumeData = {
     {
       title: "ICDL Profile Certificate",
       issuer: "International Computer Driving Licence",
-      desc: "Verified international standard in digital skills and professional computer use."
+      desc: "Comprehensive proficiency in Computer & Online Essentials (14/10/2024), Online Collaboration (21/10/2024), Cyber Security (04/11/2024), E-Commerce (14/05/2026), Digital Marketing (14/05/2026), and Artificial Intelligence (14/05/2026).",
+      link: "/icdl.pdf"
+    },
+    {
+      title: "IT Essentials",
+      issuer: "HP",
+      desc: "Professional certification covering computer hardware, software configuration, and troubleshooting standards.",
+      link: "/hp.pdf"
+    },
+    {
+      title: "HP LIFE: Introduction to Cybersecurity Awareness",
+      issuer: "HP Foundation",
+      desc: "Successfully completed online course on common cybersecurity threats and basic ways to keep online data and information more secure. Presented 9/4/2024.",
+      link: "/hp-life.pdf"
     }
   ],
   skills: [
@@ -88,7 +101,7 @@ export const portfolioData = [
   {
     id: 2,
     title: "Nkozi Mart Online",
-    category: "Web Application",
+    category: "Landing Page",
     image: "/nkozi.png",
     description: "Local marketplace online with fast, responsive design, real-time inventory updates, and API integration.",
     tech: ["React", "Tailwind CSS", "Firebase", "REST API"],
@@ -98,7 +111,7 @@ export const portfolioData = [
   {
     id: 3,
     title: "Shami Global Shop",
-    category: "Web Application",
+    category: "StartUp",
     image: "/shami.png",
     description: "E-commerce platform emphasizing accessibility (WCAG), responsive design, and smooth front-end interactions.",
     tech: ["React", "Tailwind CSS", "Firebase"],

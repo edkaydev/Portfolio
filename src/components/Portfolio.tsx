@@ -93,11 +93,11 @@ export const PortfolioGrid = () => {
               initial={{ opacity: 0, y: 50, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 50, scale: 0.9 }}
-              className="bg-[#1e1e1f] border border-[#383838] w-full max-w-2xl rounded-3xl overflow-hidden relative shadow-2xl"
+              className="bg-brand-card border border-brand-border w-full max-w-2xl rounded-3xl overflow-hidden relative shadow-2xl"
             >
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-4 right-4 p-2 bg-[#2b2b2c] rounded-xl text-white z-10 hover:text-[#ffdb70] transition-colors border border-[#383838]"
+                className="absolute top-4 right-4 p-2 bg-brand-black rounded-xl text-white z-10 hover:text-brand-accent transition-colors border border-brand-border"
               >
                 <X size={20} />
               </button>
@@ -110,7 +110,7 @@ export const PortfolioGrid = () => {
                 />
                 <div className="p-8">
                   <h3 className="mb-1 text-2xl font-bold text-white">{selectedProject.title}</h3>
-                  <p className="text-[#ffdb70] text-[10px] font-bold uppercase tracking-wider mb-4">
+                  <p className="text-brand-accent text-[10px] font-bold uppercase tracking-wider mb-4">
                     {selectedProject.category}
                   </p>
                   <p className="mb-6 text-sm leading-relaxed text-gray-400">
@@ -120,7 +120,7 @@ export const PortfolioGrid = () => {
                     {selectedProject.tech?.map(t => (
                       <span
                         key={t}
-                        className="px-3 py-1 bg-[#2b2b2c] border border-[#383838] rounded-full text-[10px] text-white font-medium"
+                        className="px-3 py-1 bg-brand-black border border-brand-border rounded-full text-[10px] text-white font-medium"
                       >
                         {t}
                       </span>
@@ -144,7 +144,7 @@ export const PortfolioGrid = () => {
                         href={selectedProject.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 bg-[#ffdb70] py-3 rounded-2xl flex items-center justify-center gap-2 text-black font-bold hover:bg-[#ffd34d] transition-all shadow-[0_0_20px_rgba(255,219,112,0.2)]"
+                        className="flex-1 bg-brand-accent py-3 rounded-2xl flex items-center justify-center gap-2 text-white font-bold hover:bg-brand-accent/90 transition-all shadow-[0_0_20px_rgba(10,132,255,0.3)]"
                       >
                         <ExternalLink size={18} /> Live Preview
                       </a>

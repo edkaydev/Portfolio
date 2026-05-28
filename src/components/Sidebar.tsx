@@ -63,15 +63,15 @@ export const Sidebar = () => (
  */
 const ContactItem = ({ icon, label, value, href }: { icon: React.ReactNode; label: string; value: string; href?: string }) => (
   <li className="flex items-center gap-4 group">
-    <div className="p-3 bg-[#202022] rounded-xl text-[#ffdb70] shadow-md border border-[#383838] group-hover:bg-[#2b2b2c] transition-colors">
+    <div className="p-3 bg-brand-card rounded-xl text-brand-accent shadow-md border border-brand-border group-hover:bg-brand-accent group-hover:text-white transition-all duration-300">
       {icon}
     </div>
     <div className="overflow-hidden">
-      <p className="text-[10px] text-gray-500 font-bold mb-1">{label}</p>
+      <p className="text-[10px] text-brand-muted font-bold mb-1">{label}</p>
       {href ? (
         <a 
           href={href} 
-          className="text-xs text-gray-200 truncate block hover:text-[#ffdb70] transition-colors"
+          className="text-xs text-gray-200 truncate block hover:text-brand-accent transition-colors"
         >
           {value}
         </a>

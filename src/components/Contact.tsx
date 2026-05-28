@@ -123,7 +123,7 @@ ${formData.message}
               placeholder="you@example.com"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full bg-transparent border border-[#383838] rounded-2xl p-4 text-white focus:border-[#ffdb70] outline-none transition-colors focus:bg-[#212123]"
+              className="w-full p-4 text-white transition-all border outline-none bg-brand-card/50 border-brand-border rounded-2xl focus:border-brand-accent focus:ring-1 focus:ring-brand-accent"
             />
           </div>
         </div>
@@ -136,7 +136,7 @@ ${formData.message}
             placeholder="e.g. $500 - $1,000"
             value={formData.budget}
             onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-            className="w-full bg-transparent border border-[#383838] rounded-2xl p-4 text-white focus:border-[#ffdb70] outline-none transition-colors focus:bg-[#212123]"
+            className="w-full p-4 text-white transition-all border outline-none bg-brand-card/50 border-brand-border rounded-2xl focus:border-brand-accent focus:ring-1 focus:ring-brand-accent"
           />
         </div>
 
@@ -149,7 +149,7 @@ ${formData.message}
             required
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            className="w-full bg-transparent border border-[#383838] rounded-2xl p-4 text-white focus:border-[#ffdb70] outline-none transition-colors focus:bg-[#212123] resize-none"
+            className="w-full p-4 text-white transition-all border outline-none resize-none bg-brand-card/50 border-brand-border rounded-2xl focus:border-brand-accent focus:ring-1 focus:ring-brand-accent"
           />
         </div>
 
@@ -157,7 +157,7 @@ ${formData.message}
         <div className="flex flex-col justify-end gap-4 mt-4 sm:flex-row">
           <a
             href={`mailto:${personalInfo.email}`}
-            className="flex items-center justify-center gap-2 px-6 py-4 font-medium text-gray-400 transition-colors border border-[#383838] bg-[#212123] rounded-2xl hover:text-white hover:border-gray-500"
+            className="flex items-center justify-center gap-2 px-6 py-4 font-medium transition-colors border text-brand-muted border-brand-border bg-brand-card rounded-2xl hover:text-white hover:border-brand-accent"
           >
             <Mail size={18} />
             <span>Send Email</span>
@@ -166,7 +166,7 @@ ${formData.message}
           <button
             type="submit"
             disabled={status === 'sending'}
-            className="flex items-center justify-center gap-3 px-10 py-4 font-bold text-black transition-all bg-[#ffdb70] rounded-2xl hover:bg-[#ffd34d] shadow-lg active:scale-95 disabled:opacity-70"
+            className="flex items-center justify-center gap-3 px-10 py-4 font-bold text-white transition-all shadow-lg bg-brand-accent rounded-2xl hover:bg-brand-accent/90 active:scale-95 disabled:opacity-70"
           >
             {status === 'sending'
               ? <Loader2 size={20} className="animate-spin" />
