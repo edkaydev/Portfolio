@@ -15,6 +15,7 @@ export const Sidebar = () => (
 
     {/* Identity */}
     <h1 className="mb-2 text-xl font-bold tracking-tight text-center text-white">{personalInfo.brandName}</h1>
+    <p className="mb-4 text-[10px] font-medium text-brand-muted uppercase tracking-[0.2em]">{personalInfo.name}</p>
     <p className="bg-brand-card border border-brand-border text-[10px] text-brand-muted px-4 py-1.5 rounded-lg mb-6 font-medium uppercase tracking-widest">{personalInfo.role}</p>
     
     <div className="w-full my-6 border-t border-brand-border"></div>

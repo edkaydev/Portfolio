@@ -39,12 +39,12 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-brand-black text-gray-300 p-4 sm:p-6 lg:p-12 flex flex-col lg:flex-row gap-6 lg:gap-8 justify-center items-start max-w-[1440px] mx-auto">
+    <div className="min-h-screen bg-brand-black text-gray-300 p-4 sm:p-6 lg:px-8 lg:py-12 flex flex-col lg:flex-row gap-6 lg:gap-8 justify-center items-start max-w-[1440px] mx-auto">
       <Sidebar />
       
       <main 
         ref={contentRef}
-        className="flex-1 w-full max-w-4xl bg-brand-card border border-brand-border rounded-3xl p-6 sm:p-8 lg:p-12 relative overflow-hidden mb-20 lg:mb-0"
+        className="relative flex-1 w-full max-w-5xl p-6 mb-20 overflow-hidden border bg-brand-card border-brand-border rounded-3xl sm:p-8 lg:p-12 lg:mb-0"
       >
         {/* Responsive Navigation */}
         <nav className="
