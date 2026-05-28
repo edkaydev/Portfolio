@@ -1,59 +1,72 @@
 export const personalInfo = {
-  name: "Edward Kayiira",
+  name: "Kayiira Edward",
   brandName: "edkay.dev",
-  role: "Software Engineer & Frontend Developer",
+  role: "Frontend Architect & Digital Experience Specialist",
   avatar: "/edward.png",
   email: "edwardbrin1@gmail.com",
-  phone: "+256 791 598 412",
+  phone: "+256 746 838 046",
   birthday: "March 4, 2004",
   location: "Uganda",
   socials: {
     github: "https://github.com/edwardkay1",
+    twitter: "https://x.com/edwardkay1_",
     linkedin: "https://www.linkedin.com/in/edwardkay1/",
-    twitter: "https://x.com/edwardkay1_"
   },
-  whatsapp: "256791598412",
+  whatsapp: "256746838046",
 };
 
 export const aboutData = {
   description: [
-    "Software Engineer specializing in building scalable web applications, digital commerce systems, and modern user experiences.",
-    "Focused on delivering high-performance, accessible solutions with a minimalist and intentional design philosophy."
+    "I don’t just build websites; I craft digital experiences that connect businesses to their audience. With over 2 years of hands-on experience, I specialize in high-conversion interfaces that turn casual visitors into loyal customers.",
+    "I thrive at the intersection of clean code and business growth. From tailored WhatsApp-commerce platforms to scalable web portals, I deliver solutions that are fast, responsive, and designed for real-world impact."
   ],
   services: [
     {
-      title: "Front-End Development",
-      description: "Building responsive web interfaces using React, TypeScript, and modern CSS frameworks.",
-      icon: "Code"
+      title: "High-Impact Frontend",
+      description: "Designing visually stunning, lightning-fast interfaces using React and TypeScript that captivate and convert users.",
+      icon: "Code",
     },
     {
-      title: "REST API Integration",
-      description: "Connecting front-end components with back-end services and ensuring seamless data flow.",
-      icon: "Globe"
+      title: "WhatsApp-Commerce Expertise",
+      description: "Seamless e-commerce workflows that link your digital storefront directly with your customers via WhatsApp.",
+      icon: "Globe",
     }
   ],
-  testimonials: [],
+  testimonials: [
+    {
+      name: "Verified Client",
+      role: "E-commerce Owner",
+      avatar: "/test1.png",
+      text: "Edward transformed our business. His WhatsApp-ordering system eliminated friction for customers, making sales easier than ever!"
+    },
+    {
+      name: "Startup Founder",
+      role: "Tech Lead",
+      avatar: "/test2.png",
+      text: "A rare developer who understands both code and customer needs. Edward delivered a functional, beautiful, and timely product."
+    },
+  ],
   clients: []
 };
 
 export const resumeData = {
   education: [
     {
-      title: "B.Sc. in Computer Science | Uganda Martyrs University",
+      title: "Uganda Martyrs University",
       date: "2024 — Present",
-      desc: "Learning software engineering, front-end development, and scalable web application design."
+      desc: "BSc in Computer Science — Mastering algorithmic thinking, software engineering, and scalable web development.",
     }
   ],
   experience: [
     {
-      title: "Freelance Front-End Developer",
+      title: "Freelance Frontend Developer",
       date: "2024 — Present",
-      desc: "Developed responsive web interfaces with React, HTML5, CSS3, and integrated REST APIs. Optimized performance, ensured cross-browser compatibility, and maintained clean code."
+      desc: "Building bespoke digital solutions for SMEs. Focused on maximizing ROI through optimized web performance and direct-to-customer tools.",
     },
     {
-      title: "Front-End Apprentice | Primacy Technologies",
+      title: "Software Developer Apprentice",
       date: "09/2025 — 12/2025",
-      desc: "Worked in an Agile team implementing front-end features, following coding standards, and debugging using Chrome DevTools."
+      desc: "Worked in an agile WordPress team delivering custom enterprise layouts with pixel-perfect responsiveness and SEO optimization.",
     }
   ],
   certifications: [

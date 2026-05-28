@@ -5,6 +5,7 @@ import { About } from './components/About';
 import { Resume } from './components/Resume';
 import { Contact } from './components/Contact';
 import { PortfolioGrid } from './components/Portfolio';
+import { Certificates } from './components/Certificates';
 
 function App() {
   const [activeTab, setActiveTab] = useState('About');
@@ -55,7 +56,7 @@ function App() {
   
   overflow-x-auto scrollbar-hide"
 >
-  {['About', 'Resume', 'Portfolio', 'Contact'].map((tab) => (
+  {['About', 'Resume', 'Certificates', 'Portfolio', 'Contact'].map((tab) => (
     <button 
       key={tab}
       onClick={() => handleTabChange(tab)}
@@ -86,6 +87,7 @@ function App() {
           >
             {activeTab === 'About' && <About />}
             {activeTab === 'Resume' && <Resume />}
+            {activeTab === 'Certificates' && <Certificates />}
             {activeTab === 'Portfolio' && <PortfolioGrid />}
             {activeTab === 'Contact' && <Contact />}
           </motion.div>
