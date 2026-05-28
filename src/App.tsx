@@ -39,7 +39,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-brand-black text-gray-300 p-4 sm:p-6 lg:px-0 lg:py-12 flex flex-col lg:flex-row gap-6 lg:gap-8 justify-center items-start max-w-[1440px] mx-auto">
+    <div className="min-h-screen bg-brand-black text-gray-300 p-4 sm:p-6 lg:px-4 lg:py-12 flex flex-col lg:flex-row gap-6 lg:gap-8 justify-center items-start max-w-[1600px] mx-auto">
       <Sidebar />
       
       <main 

@@ -42,7 +42,7 @@ export const PortfolioGrid = () => {
       </nav>
 
       {/* Project Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project) => (
             <motion.div
@@ -52,7 +52,7 @@ export const PortfolioGrid = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
-              className={`cursor-pointer group ${project.title === 'Manira Store' ? 'md:col-span-2' : ''}`}
+              className={`cursor-pointer group ${project.title === 'Manira Store' ? 'md:col-span-2 xl:col-span-2' : ''}`}
               onClick={() => setSelectedProject(project)}
             >
               <div className="relative mb-4 overflow-hidden transition-all border rounded-3xl bg-brand-card border-brand-border group-hover:border-brand-accent/50">
