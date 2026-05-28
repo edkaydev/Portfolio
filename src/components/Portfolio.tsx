@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Eye, Github, ExternalLink, X } from 'lucide-react';
 import { Eye, Github, ExternalLink, X, ArrowUpRight } from 'lucide-react';
 import { portfolioData } from '../data/data';
 import { ParticleSphere } from './ParticleSphere';
@@ -30,41 +29,49 @@ export const PortfolioGrid = () => {
     <section className="animate-fade-in">
       {/* Featured Project Spotlight */}
       {filter === 'All' && (
-        <div className="relative mb-16 overflow-hidden border bg-brand-card border-brand-border rounded-3xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            {/* Left Column: Content */}
-            <div className="relative z-10 flex flex-col justify-center p-8 lg:p-12">
-              <span className="mb-4 font-mono text-xs font-bold tracking-widest uppercase text-brand-accent">
-                Featured System
-              </span>
-              <h2 className="mb-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl">
-                Manira Store
-              </h2>
-              <p className="max-w-md mb-8 text-base leading-relaxed text-gray-400">
-                A specialized commerce engine empowering local craftsmanship through an optimized, mobile-first marketplace experience. Built for scale and conversion.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-8">
-                {['Next.js', 'TypeScript', 'Firebase'].map(tag => (
-                  <span key={tag} className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider border rounded-full bg-brand-black/40 border-brand-border text-brand-muted font-mono">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+        <div className="relative grid grid-cols-1 mb-16 overflow-hidden border lg:grid-cols-2 bg-brand-card border-brand-border rounded-3xl group">
+          {/* Left Column: Content */}
+          <div className="relative z-10 flex flex-col justify-center p-8 lg:p-14">
+            <p className="mb-4 font-mono text-[10px] font-bold tracking-[0.3em] uppercase text-brand-accent">
+              Featured Case Study
+            </p>
+            <h2 className="mb-6 text-4xl font-extrabold tracking-tighter text-white md:text-5xl">
+              Manira Store
+            </h2>
+            <p className="max-w-md mb-10 text-base leading-relaxed text-brand-muted">
+              Architecting a specialized digital marketplace that empowers local artisans. 
+              This system focuses on reducing operational friction while maximizing 
+              customer conversion through a bespoke D2C engine.
+            </p>
+            
+            <div className="flex flex-wrap gap-3 mt-auto">
+              {['Next.js', 'TypeScript', 'Firebase'].map(tag => (
+                <span 
+                  key={tag} 
+                  className="px-4 py-1.5 text-[9px] font-bold uppercase tracking-widest border rounded-full bg-brand-black/20 border-brand-border text-brand-muted font-mono"
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
+          </div>
 
-            {/* Right Column: Visuals & CTA */}
-            <div className="relative flex items-center justify-center min-h-[300px] lg:min-h-full bg-brand-black/20 border-l border-brand-border/50">
-              <div className="absolute inset-0 z-0">
-                <ParticleSphere />
-              </div>
-              <a 
-                href="https://manira.store" 
-                target="_blank" 
-                className="relative z-10 flex items-center justify-center w-24 h-24 transition-all duration-500 border bg-brand-card border-brand-border rounded-2xl group hover:border-brand-accent hover:scale-105"
-              >
-                <ArrowUpRight size={32} className="transition-transform text-brand-accent group-hover:translate-x-1 group-hover:-translate-y-1" />
-              </a>
+          {/* Right Column: Visuals & CTA */}
+          <div className="relative flex items-center justify-center min-h-[350px] bg-brand-black/30 border-t lg:border-t-0 lg:border-l border-brand-border/50">
+            {/* Background 3D Asset */}
+            <div className="absolute inset-0 flex items-center justify-center scale-110 opacity-40">
+              <ParticleSphere />
             </div>
+            
+            {/* Square Action Button */}
+            <a 
+              href="https://manira.store" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="relative z-20 flex items-center justify-center w-20 h-20 transition-all duration-500 border shadow-2xl bg-brand-card border-brand-border rounded-2xl group/btn hover:border-brand-accent hover:scale-110 active:scale-95"
+            >
+              <ArrowUpRight size={32} className="transition-transform text-brand-accent group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
+            </a>
           </div>
         </div>
       )}
@@ -85,10 +92,8 @@ export const PortfolioGrid = () => {
       </nav>
 
       {/* Project Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
         <AnimatePresence mode="popLayout">
-          {filteredProjects.map((project) => (
           {filteredProjects.filter(p => filter !== 'All' || p.id !== 1).map((project) => (
             <motion.div
               layout
