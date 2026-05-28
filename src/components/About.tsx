@@ -32,7 +32,7 @@ export const About = () => (
     ))}
 
     {/* Services */}
-    <h3 className="mt-10 mb-8 text-xl font-bold text-white">What I'm Doing</h3>
+    <h3 className="mt-10 mb-8 text-xl font-bold text-white uppercase tracking-widest">Engineering Focus</h3>
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
       {aboutData.services.map((s: Service, i: number) => (
         <div 
@@ -53,7 +53,7 @@ export const About = () => (
     </div>
 
     {/* Testimonials */}
-    <h3 className="mt-12 mb-10 text-xl font-bold text-white">Testimonials</h3>
+    <h3 className="mt-12 mb-10 text-xl font-bold text-white uppercase tracking-widest">Client Insights</h3>
     <div className="flex gap-6 pb-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
       {aboutData.testimonials.map((t: Testimonial, i: number) => (
         <div 

@@ -1,10 +1,10 @@
 export const personalInfo = {
-  name: "Kayiira Edward",
+  name: "kayiira edward",
   brandName: "edkay.dev",
   role: "Frontend Architect & Digital Experience Specialist",
   avatar: "/edward.png",
   email: "edwardbrin1@gmail.com",
-  phone: "+256 746 838 046",
+  phone: "+256 791 598 412",
   birthday: "March 4, 2004",
   location: "Uganda",
   socials: {
@@ -12,23 +12,23 @@ export const personalInfo = {
     twitter: "https://x.com/edwardkay1_",
     linkedin: "https://www.linkedin.com/in/edwardkay1/",
   },
-  whatsapp: "256746838046",
+  whatsapp: "256791598412",
 };
 
 export const aboutData = {
   description: [
-    "I don’t just build websites; I craft digital experiences that connect businesses to their audience. With over 2 years of hands-on experience, I specialize in high-conversion interfaces that turn casual visitors into loyal customers.",
-    "I thrive at the intersection of clean code and business growth. From tailored WhatsApp-commerce platforms to scalable web portals, I deliver solutions that are fast, responsive, and designed for real-world impact."
+    "I don’t just build websites; I craft digital experiences that bridge the gap between businesses and their ideal audience. With a focus on high-conversion interfaces, I transform casual visitors into loyal customers through intentional design and performance.",
+    "I thrive at the intersection of clean architecture and business growth. Whether engineering tailored WhatsApp-commerce ecosystems or scalable enterprise portals, I deliver high-impact solutions that are lightning-fast and battle-tested for the real world."
   ],
   services: [
     {
-      title: "High-Impact Frontend",
-      description: "Designing visually stunning, lightning-fast interfaces using React and TypeScript that captivate and convert users.",
+      title: "Bespoke Frontend Architecture",
+      description: "Engineering visually arresting, high-performance interfaces that reduce bounce rates and maximize user engagement.",
       icon: "Code",
     },
     {
-      title: "WhatsApp-Commerce Expertise",
-      description: "Seamless e-commerce workflows that link your digital storefront directly with your customers via WhatsApp.",
+      title: "Strategic Conversational Commerce",
+      description: "Developing frictionless D2C ecosystems that bridge the gap between digital catalogs and direct customer interactions.",
       icon: "Globe",
     }
   ],
@@ -59,21 +59,21 @@ export const resumeData = {
   ],
   experience: [
     {
-      title: "Freelance Frontend Developer",
+      title: "Independent Solutions Architect",
       date: "2024 — Present",
-      desc: "Building bespoke digital solutions for SMEs. Focused on maximizing ROI through optimized web performance and direct-to-customer tools.",
+      desc: "Delivering high-performance digital infrastructure for SMEs. My focus remains on maximizing ROI through rigorous performance optimization and direct-to-consumer commerce tools.",
     },
     {
-      title: "Software Developer Apprentice",
+      title: "Systems Engineering Apprentice",
       date: "09/2025 — 12/2025",
-      desc: "Worked in an agile WordPress team delivering custom enterprise layouts with pixel-perfect responsiveness and SEO optimization.",
+      desc: "Engineered custom enterprise-grade layouts in a high-velocity agile team, achieving pixel-perfect responsiveness and industry-leading SEO benchmarks.",
     }
   ],
   certifications: [
     {
       title: "ICDL Profile Certificate",
       issuer: "International Computer Driving Licence",
-      desc: "Comprehensive proficiency in Computer & Online Essentials (14/10/2024), Online Collaboration (21/10/2024), Cyber Security (04/11/2024), E-Commerce (14/05/2026), Digital Marketing (14/05/2026), and Artificial Intelligence (14/05/2026).",
+      desc: "Verified international accreditation across core digital competencies, including E-Commerce, Cyber Security, and Strategic AI implementation.",
       link: "/icdl.pdf"
     },
     {
@@ -85,7 +85,7 @@ export const resumeData = {
     {
       title: "HP LIFE: Introduction to Cybersecurity Awareness",
       issuer: "HP Foundation",
-      desc: "Successfully completed online course on common cybersecurity threats and basic ways to keep online data and information more secure. Presented 9/4/2024.",
+      desc: "Professional certification in identifying threat vectors and implementing digital security protocols for sensitive information systems.",
       link: "/hp.pdf"
     }
   ],
@@ -105,7 +105,7 @@ export const portfolioData = [
     title: "Manira Store",
     category: "StartUp",
     image: "/manira.png",
-    description: "An e-commerce platform for local artisans, offering a seamless shopping experience with fast delivery and secure payments.",
+    description: "A specialized commerce engine empowering local craftsmanship through an optimized, mobile-first marketplace experience.",
     tech: ["Firebase", "TypeScript", "Next.js"],
     link: "https://manira.store",
     gitLink: ""
@@ -115,7 +115,7 @@ export const portfolioData = [
     title: "Essimu Uganda | Smart Shop",
     category: "Landing Page",
     image: "/essimu.png",
-    description: "A high-performance digital storefront built for seamless WhatsApp conversions, turning clicks into sales.",
+    description: "A performance-tuned storefront bridging global digital traffic with local trade via a frictionless WhatsApp-ordering ecosystem.",
     tech: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://essimu-ug.vercel.app/",
     gitLink: "https://github.com/edwardkay1/essimu-ug"
@@ -125,7 +125,7 @@ export const portfolioData = [
     title: "University Attendance Portal",
     category: "Application",
     image: "/student.png",
-    description: "Digitizing classroom attendance with speed and precision, streamlining the academic workflow for students and reps.",
+    description: "A streamlined administrative solution designed to eliminate manual overhead through digitized, high-precision tracking.",
     tech: ["React", "TypeScript", "Tailwind CSS"],
     link: "",
     gitLink: "https://github.com/edwardkay1/University-Attendance-App"
@@ -135,7 +135,7 @@ export const portfolioData = [
     title: "Essimu Management Portal",
     category: "Web Application",
     image: "/essimuPortal.png",
-    description: "A management hub for Uganda seller words with multi-seller cart support and a 2-month trial period for new users.",
+    description: "A centralized operations hub facilitating multi-seller scalability and administrative oversight for regional trade networks.",
     tech: ["React", "Firebase", "Cloudinary", "Tailwind"],
     link: "https://essimu-ug.vercel.app/",
     gitLink: "https://github.com/edwardkay1/essimu-ug"
