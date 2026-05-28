@@ -15,8 +15,8 @@ export const Sidebar = () => (
 
     {/* Identity */}
     <h1 className="mb-2 text-xl font-bold tracking-tight text-center text-white">{personalInfo.brandName}</h1>
-    <p className="mb-4 text-[10px] font-medium text-brand-muted uppercase tracking-[0.2em]">{personalInfo.name}</p>
-    <p className="bg-brand-card border border-brand-border text-[10px] text-brand-muted px-4 py-1.5 rounded-lg mb-6 font-medium uppercase tracking-widest">{personalInfo.role}</p>
+    <p className="mb-4 text-[10px] font-bold text-brand-muted uppercase tracking-[0.3em] font-mono">{personalInfo.name}</p>
+    <p className="bg-brand-card border border-brand-border text-[10px] text-brand-muted px-4 py-1.5 rounded-lg mb-6 font-bold uppercase tracking-widest font-mono">{personalInfo.role}</p>
     
     <div className="w-full my-6 border-t border-brand-border"></div>
 
@@ -69,7 +69,7 @@ const ContactItem = ({ icon, label, value, href }: { icon: React.ReactNode; labe
       {icon}
     </div>
     <div className="overflow-hidden">
-      <p className="text-[10px] text-brand-muted font-bold mb-1">{label}</p>
+      <p className="text-[9px] text-brand-muted font-bold mb-1 font-mono tracking-tighter">{label}</p>
       {href ? (
         <a 
           href={href} 

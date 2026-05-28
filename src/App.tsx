@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="min-h-screen text-gray-300 bg-brand-black">
       <Helmet>
-        <title>{`${activeTab} | ${personalInfo.brandName} - ${personalInfo.role}`}</title>
+        <title>{`${activeTab} | ${personalInfo.name} (@edkaydev) | ${personalInfo.brandName}`}</title>
         <meta name="description" content={aboutData.description[0]} />
       </Helmet>
 
@@ -70,7 +70,7 @@ function App() {
     <button 
       key={tab}
       onClick={() => handleTabChange(tab)}
-      className={`text-sm font-bold transition-colors whitespace-nowrap ${
+      className={`text-[11px] font-bold transition-colors whitespace-nowrap tracking-wider uppercase font-mono ${
         activeTab === tab ? 'text-brand-accent' : 'text-brand-muted hover:text-gray-200'
       }`}
     >
