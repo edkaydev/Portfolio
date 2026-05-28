@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Calendar, MapPin, Github, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, Calendar, MapPin, Github, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
 import { personalInfo } from '../data/data';
 
 export const Sidebar = () => (
@@ -52,6 +52,7 @@ export const Sidebar = () => (
       <SocialLink href={personalInfo.socials.twitter} icon={<Twitter size={18} />} label="Twitter" />
       <SocialLink href={personalInfo.socials.linkedin} icon={<Linkedin size={18} />} label="LinkedIn" />
       <SocialLink href={personalInfo.socials.instagram} icon={<Instagram size={18} />} label="Instagram" />
+      <SocialLink href={personalInfo.socials.youtube} icon={<Youtube size={18} />} label="YouTube" />
     </div>
   </aside>
 );

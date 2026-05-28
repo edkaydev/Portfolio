@@ -12,6 +12,7 @@ export const personalInfo = {
     twitter: "https://x.com/edkaydev",
     linkedin: "https://www.linkedin.com/in/edkaydev/",
     instagram: "https://www.instagram.com/edkaydev/",
+    youtube: "https://www.youtube.com/@edkaydev",
   },
   whatsapp: "256791598412",
 };
