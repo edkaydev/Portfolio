@@ -7,7 +7,7 @@ import { Resume } from './components/Resume';
 import { Contact } from './components/Contact';
 import { PortfolioGrid } from './components/Portfolio';
 import { Certificates } from './components/Certificates';
-import { personalInfo } from './data/data';
+import { personalInfo, aboutData } from './data/data';
 
 function App() {
   const [activeTab, setActiveTab] = useState('About');
