@@ -24,7 +24,6 @@ export const Resume = () => (
     <h3 className="mt-12 mb-8 text-xl font-bold tracking-widest text-white uppercase">Technical Proficiency</h3>
     <div className="p-8 space-y-6 border bg-brand-card rounded-3xl border-brand-border">
       {resumeData.skills.map(skill => (
-        <div key={skill.name}>
         <div key={skill.name} className="font-mono">
           <div className="flex justify-between mb-2 text-sm font-bold">
             <span className="text-white">{skill.name}</span>
@@ -57,7 +56,6 @@ const Timeline = ({ title, icon, items }: TimelineProps) => (
           className="relative pl-8 before:content-[''] before:absolute before:left-[-5px] before:top-1 before:w-[10px] before:h-[10px] before:bg-brand-accent before:rounded-full before:shadow-[0_0_0_4px_#1E293B]"
         >
           <h4 className="mb-1 text-sm font-bold text-white">{item.title}</h4>
-          <p className="mb-2 text-xs text-brand-accent">{item.date}</p>
           <p className="mb-2 text-[10px] font-bold uppercase tracking-wider text-brand-accent font-mono">{item.date}</p>
           <p className="text-xs leading-relaxed text-gray-400">{item.desc}</p>
         </div>
