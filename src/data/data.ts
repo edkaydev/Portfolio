@@ -106,7 +106,7 @@ export const portfolioData = [
     id: 1,
     title: "Manira Store",
     category: "StartUp",
-    image: "/manira.png",
+    image: "/manira.webp",
     description: "A specialized commerce engine empowering local craftsmanship through an optimized, mobile-first marketplace experience.",
     tech: ["Firebase", "TypeScript", "Next.js"],
     link: "https://manira.store",
