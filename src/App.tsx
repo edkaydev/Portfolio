@@ -13,7 +13,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('About');
   const contentRef = useRef<HTMLElement>(null);
 
-  const slideUpVariants: Variants = { // Add the type here
+  const slideUpVariants: Variants = { 
     initial: { opacity: 0, y: 20 },
     animate: { 
       opacity: 1, 
