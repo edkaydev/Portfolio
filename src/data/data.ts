@@ -120,7 +120,7 @@ export const portfolioData = [
     description: "A performance-tuned storefront bridging global digital traffic with local trade via a frictionless WhatsApp-ordering ecosystem.",
     tech: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://essimu-ug.vercel.app/",
-    gitLink: "https://github.com/edwardkay1/essimu-ug"
+    gitLink: "https://github.com/edkaydev/essimu-ug"
   },
   {
     id: 3,
@@ -130,7 +130,7 @@ export const portfolioData = [
     description: "A streamlined administrative solution designed to eliminate manual overhead through digitized, high-precision tracking.",
     tech: ["React", "TypeScript", "Tailwind CSS"],
     link: "",
-    gitLink: "https://github.com/edwardkay1/University-Attendance-App"
+    gitLink: "https://github.com/edkaydev/University-Attendance-App"
   },
   {
     id: 4,
@@ -140,7 +140,7 @@ export const portfolioData = [
     description: "A centralized operations hub facilitating multi-seller scalability and administrative oversight for regional trade networks.",
     tech: ["React", "Firebase", "Cloudinary", "Tailwind"],
     link: "https://essimu-ug.vercel.app/",
-    gitLink: "https://github.com/edwardkay1/essimu-ug"
+    gitLink: "https://github.com/edkaydev/essimu-ug"
   },
   {
     id: 5,
@@ -150,7 +150,7 @@ export const portfolioData = [
     description: "A premium e-commerce experience that converts product catalogs into direct customer conversations.",
     tech: ["React", "Tailwind CSS", "Firebase"],
     link: "https://shamiglobal-shop.vercel.app/",
-    gitLink: "https://github.com/edwardkay1/Shami-Global-shop"
+    gitLink: "https://github.com/edkaydev/Shami-Global-shop"
   },
   {
     id: 6,
@@ -160,7 +160,7 @@ export const portfolioData = [
     description: "Bringing the local market online with a fast, mobile-first marketplace designed for seamless shopping.",
     tech: ["React", "Tailwind CSS", "Firebase"],
     link: "https://nkozi-mart.vercel.app/",
-    gitLink: "https://github.com/edwardkay1/Nkozi-Mart"
+    gitLink: "https://github.com/edkaydev/Nkozi-Mart"
   },
   {
     id: 7,
